@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+html, body { 
+    height: 100%;
+}
+body { 
+    margin: 0; 
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Main design starts */
+
+    .container {
+        width: 100%;
+        max-width: 1320px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+.holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+button {
+    padding: 15px 50px 15px 50px;
+    border: none;
+    background-color: #FFC801;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.error__image {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 50%;
+}
+
+.error__description {
+    padding: 20px 0px;
+    width: 320px;
+    margin: auto;
+}
+
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media(max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
